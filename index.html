@@ -1,0 +1,144 @@
+<!DOCTYPE html> <!-- A Versão do HTML -->
+<html lang="pt-br"> <!-- Idioma do site -->
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8"> <!-- Padrão de caracter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compativel com celulares e computadores -->
+    <link rel="stylesheet" href="style.css"> <!-- para entender que existe um css vinculado-->
+    <title>Laiflix</title> <!-- Titulo do Site -->
+</head>
+
+<body>
+
+    <div class="tela-entrada" id="tela-entrada">
+        <img src="IMG/laiflix-transparent.png" class="tela-entrada-logo">
+    </div>
+
+    <nav class="navbar-laiflix">
+        <img src="IMG/laiflix-transparent.png" class="img-topo">
+        <img src="IMG/icon.jpg" class="img-topo">
+    </nav>
+
+    <div class="capa">
+        <span class="capa-badge">✦ Em Destaque</span>
+        <h1 class="capa-titulo">Laíne Ferreira</h1>
+        <p class="capa-descricao">
+            Em um mundo onde bugs surgem sem aviso e o aprendizado nunca para, uma desenvolvedora
+            front-end em formação transforma desafios em evolução.
+            Estudante de Ciência da Computação, desenvolve projetos utilizando JavaScript, React e
+            TypeScript, com foco em aprendizado contínuo e boas práticas.
+            Curiosa, resiliente e determinada, encara cada linha de código como uma oportunidade de
+            crescimento — transformando erros em aprendizado e projetos em experiência real.
+        </p>
+        <div class="capa-botoes">
+            <a class="link-assistir">▶ Assistir</a>
+            <a class="link-info" id="btn-info">ⓘ Mais Informações</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <video src="vd/videosemlegenda.MOV" autoplay muted loop class="video" id="video"></video>
+        <div class="hero-gradiente"></div>
+    </div>
+
+    <button class="botao-som" id="botao-som">🔇</button>
+
+
+    <div class="secao-carrossel">
+        <h2 class="titulo_carrosel">Familia</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="IMG/IMG_1.jpg" class="imagem_carrossel">
+                    <img src="IMG/IMG_2.jpg" class="imagem_carrossel">
+                    <img src="IMG/IMG_3.jpg" class="imagem_carrossel">
+                    <img src="IMG/IMG_4.jpg" class="imagem_carrossel">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="IMG/IMG_5.jpg" class="imagem_carrossel">
+                    <img src="IMG/IMG_6.jpg" class="imagem_carrossel">
+                    <img src="IMG/IMG_7.jpg" class="imagem_carrossel">
+                    <img src="IMG/IMG_8.jpg" class="imagem_carrossel">
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <div class="modal-overlay" id="modal">
+            <div class="modal-conteudo">
+                <button class="modal-fechar" id="modal-fechar">✕</button>
+                <div class="modal-header">
+                    <h2 class="modal-nome">Laíne Ferreira</h2>
+                    <div class="modal-tags">
+                        <span class="tag tag-green">✓ Disponível</span>
+                        <span class="tag">2003</span>
+                        <span class="tag">Ciência da Computação</span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-coluna-esq">
+                        <p class="modal-descricao">
+                            Desenvolvedora front-end em formação e estudante de Ciência da Computação, com foco em
+                            construir uma base sólida em desenvolvimento web moderno.
+
+                            Venho desenvolvendo projetos práticos utilizando JavaScript, React e TypeScript, aplicando
+                            conceitos de componentização, organização de código e boas práticas de desenvolvimento.
+
+                            Tenho uma rotina constante de estudos, buscando evoluir tanto na parte técnica quanto na
+                            forma de pensar soluções — entendendo problemas, testando abordagens e aprendendo com cada
+                            erro.
+
+                            Alguns projetos foram criados com o objetivo de aprofundar conhecimentos em front-end,
+                            simular desafios reais e desenvolver autonomia na construção de aplicações.
+
+                            Atualmente, busco minha primeira oportunidade na área de tecnologia como desenvolvedora
+                            front-end, onde eu possa aprender com profissionais mais experientes, contribuir com
+                            projetos e continuar evoluindo.
+                        </p>
+                        <div class="modal-secao">
+                            <h3 class="modal-secao-titulo">Episódios · Tecnologias</h3>
+                            <div class="skills-grid">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-coluna-dir">
+                        <p><span class="modal-label">Gênero:</span> Ação · Tecnologia · Drama</p>
+                        <p><span class="modal-label">Lançamento:</span> 2003</p>
+                        <p><span class="modal-label">Curso:</span> Ciência da Computação</p>
+                        <p><span class="modal-label">Interesses:</span> IA, Cibersegurança, Front-end</p>
+                        <p><span class="modal-label">Status:</span> Em desenvolvimento 🚀</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <audio id="tudum" src="audio/tudum.mp3"></audio>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+
+</body>
+
+</html>
